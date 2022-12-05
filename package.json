@@ -1,14 +1,20 @@
 {
   "name": "vite-plugin-uniapp-customize-component",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.1",
+  "types": "dist/index.d.ts",
+  "description": "vite+uniapp+字节小程序引入字节库插件",
   "scripts": {
     "build": "rollup -c"
   },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lisheri/vite-plugin-uniapp-customize-component.git"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
