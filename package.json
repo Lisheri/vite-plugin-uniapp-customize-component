@@ -1,8 +1,8 @@
 {
   "name": "vite-plugin-uniapp-customize-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "types": "dist/index.d.ts",
-  "description": "vite+uniapp+字节小程序引入字节库插件",
+  "description": "vite+uniapp+在组件级引入自定义插件",
   "scripts": {
     "build": "rollup -c"
   },
