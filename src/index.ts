@@ -1,7 +1,4 @@
-type UsingComponents = Record<string, string>;
-type Options = Record<string, UsingComponents>;
-
-type Platform = "wx" | "tt";
+import { Options, Platform } from "./uniappCustomizeComponent";
 
 // 插件本体
 const UniappCustomizeComponent = (
@@ -36,7 +33,7 @@ const UniappCustomizeComponent = (
             // 处理组件标签属性
             const tags = Object.keys(options[bundleName]);
             tags.forEach((tag) => {
-              const reg = new RegExp(`\\<${tag}[\\s\\S]*?</${tag}>`, "g");
+              const reg = new RegExp(`\\<${tag}[\\s\\S]*?((/>|</${tag}>)`, "g");
               currentBundle.source = currentBundle.source.replace(
                 reg,
                 (str: string) => {

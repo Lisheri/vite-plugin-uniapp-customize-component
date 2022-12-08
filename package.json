@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-uniapp-customize-component",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "types": "dist/index.d.ts",
   "description": "vite+uniapp+在组件级引入自定义插件",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "main": "dist/index.umd.js",
   "module": "dist/index.esm.js",
-  "keywords": ["uniapp", "vite", "customizeComponent"],
+  "keywords": ["uniapp", "vite", "customizeComponent", "vue3"],
   "author": "",
   "license": "MIT",
   "repository": {
