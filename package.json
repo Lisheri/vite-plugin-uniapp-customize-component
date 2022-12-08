@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-uniapp-customize-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "types": "dist/index.d.ts",
   "description": "vite+uniapp+在组件级引入自定义插件",
   "scripts": {

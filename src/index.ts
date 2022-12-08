@@ -33,7 +33,7 @@ const UniappCustomizeComponent = (
             // 处理组件标签属性
             const tags = Object.keys(options[bundleName]);
             tags.forEach((tag) => {
-              const reg = new RegExp(`\\<${tag}[\\s\\S]*?((/>|</${tag}>)`, "g");
+              const reg = new RegExp(`\\<${tag}[\\s\\S]*?(/>|</${tag}>)`, "g");
               currentBundle.source = currentBundle.source.replace(
                 reg,
                 (str: string) => {
