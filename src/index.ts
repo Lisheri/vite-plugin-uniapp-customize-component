@@ -40,9 +40,12 @@ const UniappCustomizeComponent = (
                   if (!str.includes('u-t="m"')) {
                     // 构建出来没有u-t="m"属性
                     const targetProps = 'u-t="m"';
-                    const resourcePropsArr = str.split(" ");
-                    resourcePropsArr.splice(2, 0, targetProps);
-                    return resourcePropsArr.join(" ");
+                    const uIStr = str.match(/u-i="[\s\S]*?"/g);
+                    // 换成直接向u-i属性后面添加
+                    return str.replace(
+                      /u-i="[\s\S]*?"/g,
+                      `${uIStr} ${targetProps}`
+                    );
                   }
                   return str;
                 }
